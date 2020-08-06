@@ -1,0 +1,215 @@
+/* Global */
+:root {
+  --dark-green: #002e25;
+  --primary: #004c3f;
+  --seccondary: #008060;
+  --light-gray: #6b7177;
+  --dark: #212333;
+  --dark-gray: #42476a;
+  --padding-btn: 16px;
+}
+body {
+  background: #fbf7ed;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 22px;
+}
+
+.nav a {
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+.link_arrow {
+  display: inline;
+  margin-left: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  padding: 16px 10px;
+  color: var(--dark);
+  background: white;
+  border: solid 1px var(--dark);
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 16px 0;
+  background: var(--seccondary);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.02rem;
+  font-weight: bolder;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.grid {
+  display: grid;
+}
+
+.link {
+  font-weight: bolder;
+}
+
+/* Mobile */
+.nav_desktop {
+  display: none;
+}
+
+.hero {
+  padding-top: 60px;
+}
+
+.hero h1 {
+  font-weight: bolder;
+  color: var(--dark-green);
+}
+
+.hero form {
+  margin: 20px 0;
+}
+
+.hero form * {
+  display: block;
+  width: 100%;
+  margin: 0 0px 10px 0px;
+}
+
+.hero .small {
+  color: var(--light-gray);
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.hero .img-hero img {
+  position: relative;
+  left: -18px;
+  width: 120%;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+#business_online {
+  margin-top: -10px;
+  background-color: var(--primary);
+  color: white;
+  padding: 4rem 0;
+}
+
+#business_online * {
+  color: white;
+}
+
+#business_online h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#business_online p {
+  padding: 0.5rem 0;
+}
+
+#business_online p {
+  padding: 0.7rem 0;
+}
+
+.grid-5 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;
+  padding: 3rem 0;
+}
+
+.grid-5 .card:last-child {
+  display: none;
+}
+
+.grid-5 .card img {
+  width: 100%;
+}
+
+.grid-5 .card p {
+  padding: 0rem !important;
+}
+
+.grid-5 .card .title {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.grid-5 .card .underline:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#business_online h3 {
+  font-size: 1.3rem;
+  padding-bottom: 1.9rem;
+  padding-top: 4rem;
+}
+
+#business_online .grid-4 p {
+  padding: 0rem !important;
+}
+
+#business_online .grid-4 {
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#business_online .grid-4 .card .card-img {
+  max-width: 40px;
+  padding-bottom: 0.8rem;
+}
+
+#business_online .grid-4 .card .card-img img {
+  width: 100%;
+  fill: var(--light-gray);
+}
+
+#business_online .grid-4 .card .card-title {
+  font-weight: bolder;
+  padding-bottom: 0.5rem !important;
+}
+
+.talk {
+  background: white;
+  padding: 3.8rem 2.4rem;
+  text-align: center;
+}
+
+.talk h3 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.talk p {
+  font-size: 1.1rem;
+  color: var(--light-gray);
+}
+/* Desktop */
+/* @medi(); */
