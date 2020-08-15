@@ -503,5 +503,150 @@ footer .flex .links a {
   font-size: 0.9rem;
 }
 
-/* Desktop */
-/* @medi(); */
+/* mobile large */
+
+@media (min-width: 486px) {
+  .hero form {
+    display: flex;
+  }
+
+  .hero form * {
+    margin: 0.5rem;
+  }
+
+  .hero form button {
+    width: 50%;
+  }
+}
+
+/* tablete large */
+
+@media (min-width: 750px) {
+  .hero .content {
+    max-width: 500px;
+  }
+
+  .talk * {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .hero form {
+    display: block;
+  }
+
+  .hero form button {
+    width: 100%;
+  }
+
+  #business_online .grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #business_online .card:nth-child(4) {
+    display: none;
+  }
+
+  #business_online .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #business_online .grid-4 .card:last-child {
+    display: grid;
+  }
+
+  #business_online .grid-4 .card {
+    text-align: left;
+  }
+
+  .hero .content,
+  #business_online,
+  #left-right {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #cote .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #cote .container .img {
+    max-height: 100%;
+    width: auto;
+  }
+
+  #cote .container .img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #help .grid .img {
+    display: none;
+  }
+
+  #help .grid .grid-3 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  footer .links:first-child a {
+    text-align: left;
+  }
+
+  footer .grid-3-1 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0rem 1rem;
+  }
+
+  footer .grids {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0rem 1rem;
+  }
+
+  footer .grids a {
+    display: inline-block;
+    /* gap: 1rem; */
+  }
+
+  footer .grids .grid-1-1 {
+    height: 50%;
+    /* gap: 1rem; */
+  }
+
+  footer .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer .flex .media {
+    width: 50%;
+    text-align: left;
+  }
+  footer .flex .links {
+    display: flex;
+    text-align: right;
+    width: 50%;
+    /* max-width: fit-content; */
+    /* justify-content: left;
+    align-content: space-between; */
+  }
+}
+
+/* tablet large */
+
+@media (min-width: 850px) {
+  #business_online .card:nth-child(4) {
+    display: inline-block;
+  }
+
+  #business_online .grid-5 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1080px) {
+}
