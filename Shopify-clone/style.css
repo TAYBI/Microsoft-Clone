@@ -649,4 +649,144 @@ footer .flex .links a {
 /* desktop */
 
 @media (min-width: 1080px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    padding-top: 0;
+  }
+
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero .img-hero {
+    height: 100%;
+    width: auto;
+    right: 180px;
+    margin-bottom: 5px;
+  }
+
+  #business_online .card:nth-child(5) {
+    display: inline-block;
+  }
+
+  #business_online .grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #business_online .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #left-right .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #left-right .section .content {
+    max-width: 400px;
+  }
+
+  #left-right .section:first-child .bg-square {
+    grid-area: 1;
+  }
+
+  #cote {
+    max-width: 800px;
+    margin: 9rem auto;
+  }
+
+  footer .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  footer .flex .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    align-self: flex-end;
+    position: relative;
+    right: -12%;
+  }
+
+  footer .flex .links a {
+    display: block;
+    /* align-items: center;
+    justify-content: center; */
+  }
+}
+
+@media (min-width: 1172px) {
+  /* head .ccc { */
+
+  .nav_mobile {
+    display: none;
+  }
+
+  .nav_desktop {
+    /* padding: 1rem 0rem; */
+    display: flex;
+    /* max-width: 1200px;
+    margin: 0 auto; */
+  }
+
+  .nav_desktop .nav_left_side {
+    display: flex;
+  }
+
+  .nav_desktop .nav_left_side {
+    display: flex;
+  }
+
+  .nav_desktop .btn-primary {
+    color: white;
+    padding: 0.7rem 1.4rem;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    max-width: 500px;
+    font-size: 2.5rem;
+  }
+
+  .hero .content {
+    max-width: 900px;
+  }
+
+  .hero form {
+    display: flex;
+  }
+
+  .hero form * {
+    margin: 0.5rem;
+  }
+
+  /* width: 100%; */
+  .hero form button {
+    padding: 0.5rem 1rem;
+    width: 40%;
+  }
+
+  #help .grid-3 .card {
+    max-width: 400px;
+  }
+
+  #help .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #help .grid .img {
+    display: inline-block;
+    height: 100%;
+  }
 }
